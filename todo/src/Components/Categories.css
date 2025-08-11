@@ -1,16 +1,18 @@
 .categories {
   display: flex;
   flex-direction: column;
-  align-items: right;
+  align-items: center;      /* Center horizontally */
   justify-content: center;
   background-color: #d59d9d;
   padding: 20px;
+  max-width: 900px;         /* Optional: limit width */
+  margin: 40px auto;        /* Center on page with margin */
 }
 
 .categories-list {
-  display: flex;
+  display: inline-flexbox;
   gap: 1rem; /* space between items */
-  list-style: none;
+  list-style: point;
   padding: 0;
   margin: 0;
 }
@@ -52,6 +54,12 @@
   text-align: center;
   border: 1px solid #b47b7b;
   background: #fff;
+}
+
+.add-task-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
 }
 
 .slider-track {
